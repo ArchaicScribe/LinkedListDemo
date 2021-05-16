@@ -15,4 +15,9 @@ class Main {
   Node nodeC = new Node(4);
   Node nodeD = new Node(2);
   Node nodeE = new Node(1);
+
+  nodeA.next = nodeB;
+  nodeB.next = nodeC;
+  nodeC.next = nodeD;
+  nodeD.next = nodeE;
 }
