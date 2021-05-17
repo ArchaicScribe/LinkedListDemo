@@ -1,23 +1,17 @@
+import java.util.LinkedList;
+
 class Main {
   public static void main(String[] args) {
-   
-  }
- 
-  class Node{
-    int data;
-    Node next;
-  }
-  Node(int data){
-    this.data = data;
-  }
-  Node nodeA = new Node(6);
-  Node nodeB = new Node(3);
-  Node nodeC = new Node(4);
-  Node nodeD = new Node(2);
-  Node nodeE = new Node(1);
+   LinkedList<Integer> numbers = new LinkedList<>();
+   numbers.add(10);
+   numbers.add(12);
+   numbers.add(45);
+   numbers.add(87);
+   numbers.add(99);
 
-  nodeA.next = nodeB;
-  nodeB.next = nodeC;
-  nodeC.next = nodeD;
-  nodeD.next = nodeE;
+   for(int i = 0; i < numbers.size(); i++){
+     System.out.println(numbers.get(i) + " ");
+   }
+  }
+
 }
